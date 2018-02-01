@@ -1,0 +1,25 @@
+/* ------------------ Generic media queries  ------------------ */
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin tablet-only {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 767px) {
+    @content;
+  }
+}

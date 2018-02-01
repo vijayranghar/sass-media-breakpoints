@@ -1,0 +1,7 @@
+@import './assets/index';
+
+body {
+  @include iphone-4-portrait {
+    background-color: orange;
+  }
+}
