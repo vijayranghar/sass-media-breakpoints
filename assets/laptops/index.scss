@@ -1,6 +1,6 @@
 @import '../helper';
 
-/* ------------------ Laptop Non Retina ------------------ */
+
 @mixin laptop-non-retina {
   @media screen 
     and (min-device-width: 1200px) 
@@ -10,7 +10,7 @@
   }
 }
 
-/* ------------------ Laptop Retina ------------------ */
+
 @mixin laptop-retina {
   @media screen 
     and (min-device-width: 1200px) 

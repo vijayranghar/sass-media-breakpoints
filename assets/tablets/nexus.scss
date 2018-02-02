@@ -1,5 +1,5 @@
-/* ------------------ Nexus 7 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin nexus-7 {
   @media screen 
     and (device-width: 601px) 
@@ -10,7 +10,7 @@
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin nexus-7-portrait {
   @media screen 
     and (device-width: 601px) 
@@ -22,7 +22,7 @@
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin nexus-7-landscape {
   @media screen 
     and (device-width: 601px) 
@@ -34,8 +34,8 @@
   }
 }
 
-/* ------------------ Nexus 9 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin nexus-9 {
   @media screen 
     and (device-width: 1536px) 
@@ -46,7 +46,7 @@
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin nexus-9-portrait {
   @media screen 
     and (device-width: 1536px) 
@@ -58,7 +58,7 @@
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin nexus-9-landscape {
   @media screen 
     and (device-width: 1536px) 

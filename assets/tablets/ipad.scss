@@ -1,197 +1,197 @@
 @import '../helper';
 
-/* ------------------ iPad 1 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-1 {
   @include mediaquery(768, 1024, null, 1) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-1-portrait {
   @include mediaquery(768, 1024, portrait, 1) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-1-landscape {
   @include mediaquery(768, 1024, landscape, 1) {
     @content;
   }
 }
 
-/* ------------------ iPad 2 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-2 {
   @include mediaquery(768, 1024, null, 1) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-2-portrait {
   @include mediaquery(768, 1024, portrait, 1) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-2-landscape {
   @include mediaquery(768, 1024, landscape, 1) {
     @content;
   }
 }
 
-/* ------------------ iPad Mini ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-mini {
   @include mediaquery(768, 1024, null, 1) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-mini-portrait {
   @include mediaquery(768, 1024, portrait, 1) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-mini-landscape {
   @include mediaquery(768, 1024, landscape, 1) {
     @content;
   }
 }
 
-/* ------------------ iPad Air ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-air {
   @include mediaquery(768, 1024, null, 1) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-air-portrait {
   @include mediaquery(768, 1024, portrait, 1) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-air-landscape {
   @include mediaquery(768, 1024, landscape, 1) {
     @content;
   }
 }
 
-/* ------------------ iPad 3 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-3 {
   @include mediaquery(768, 1024, null, 2) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-3-portrait {
   @include mediaquery(768, 1024, portrait, 2) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-3-landscape {
   @include mediaquery(768, 1024, landscape, 2) {
     @content;
   }
 }
 
-/* ------------------ iPad 4 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-4 {
   @include mediaquery(768, 1024, null, 2) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-4-portrait {
   @include mediaquery(768, 1024, portrait, 2) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-4-landscape {
   @include mediaquery(768, 1024, landscape, 2) {
     @content;
   }
 }
 
-/* ------------------ iPad Pro 9.7" ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-pro-97 {
   @include mediaquery(768, 1024, null, 2) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-pro-97-portrait {
   @include mediaquery(768, 1024, portrait, 2) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-pro-97-landscape {
   @include mediaquery(768, 1024, landscape, 2) {
     @content;
   }
 }
 
-/* ------------------ iPad Pro 10.5" ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-pro-105 {
   @include mediaquery(834, 1112, null, 2) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-pro-105-portrait {
   @include mediaquery(834, 834, portrait, 2) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-pro-105-landscape {
   @include mediaquery(1112, 1112, landscape, 2) {
     @content;
   }
 }
 
-/* ------------------ iPad Pro 129 ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin ipad-pro-129 {
   @include mediaquery(1024, 1366, null, 2) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin ipad-pro-129-portrait {
   @include mediaquery(1024, 1024, portrait, 2) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin ipad-pro-129-landscape {
   @include mediaquery(1366, 1366, landscape, 2) {
     @content;

@@ -1,43 +1,43 @@
 @import '../helper';
 
-/* ------------------ Kindle Fire HD 7" ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin kindle-fire-hd-7 {
   @include mediaquery(800, 1280, null, 1.5) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin kindle-fire-hd-7-portrait {
   @include mediaquery(800, 1280, portrait, 1.5) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin kindle-fire-hd-7-landscape {
   @include mediaquery(800, 1280, landscape, 1.5) {
     @content;
   }
 }
 
-/* ------------------ Kindle Fire HD 8.9" ------------------ */
-/* ------------------ Portrait and Landscape ------------------ */
+
+
 @mixin kindle-fire-hd-89 {
   @include mediaquery(1200, 1600, null, 1.5) {
     @content;
   }
 }
 
-/* ------------------ Portrait ------------------ */
+
 @mixin kindle-fire-hd-89-portrait {
   @include mediaquery(1200, 1600, portrait, 1.5) {
     @content;
   }
 }
 
-/* ------------------ Landscape ------------------ */
+
 @mixin kindle-fire-hd-89-landscape {
   @include mediaquery(1200, 1600, landscape, 1.5) {
     @content;
