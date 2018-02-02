@@ -1,4 +1,4 @@
-@mixin mediaquery (
+@mixin mediaquery-screenonly (
   $minWidth, 
   $maxWidth,
   $orientation: null,

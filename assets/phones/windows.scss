@@ -3,21 +3,21 @@
 
 
 @mixin windows {
-  @include mediaquery(480, 800, null) {
+  @include mediaquery-screenonly(480, 800, null) {
     @content;
   }
 }
 
 
 @mixin windows-portrait {
-  @include mediaquery(480, 800, portrait) {
+  @include mediaquery-screenonly(480, 800, portrait) {
     @content;
   }
 }
 
 
 @mixin windows-landscape {
-  @include mediaquery(480, 800, landscape) {
+  @include mediaquery-screenonly(480, 800, landscape) {
     @content;
   }
 }

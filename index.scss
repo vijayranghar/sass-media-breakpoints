@@ -2,7 +2,7 @@
 
 body {
   background-color: green;
-  @include mediaquery(300, 500, portrait) {
+  @include mediaquery-screenonly(300, 500, portrait) {
     background-color: orange;
   }
 }

@@ -3,21 +3,21 @@
 
 
 @mixin iphone-4 {
-  @include mediaquery(320, 480, null, 2) {
+  @include mediaquery-screenonly(320, 480, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-4-portrait {
-  @include mediaquery(320, 480, portrait, 2) {
+  @include mediaquery-screenonly(320, 480, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-4-landscape {
-  @include mediaquery(320, 480, landscape, 2) {
+  @include mediaquery-screenonly(320, 480, landscape, 2) {
     @content;
   }
 }
@@ -25,21 +25,21 @@
 
 
 @mixin iphone-4s {
-  @include mediaquery(320, 480, null, 2) {
+  @include mediaquery-screenonly(320, 480, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-4s-portrait {
-  @include mediaquery(320, 480, portrait, 2) {
+  @include mediaquery-screenonly(320, 480, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-4s-landscape {
-  @include mediaquery(320, 480, landscape, 2) {
+  @include mediaquery-screenonly(320, 480, landscape, 2) {
     @content;
   }
 }
@@ -47,21 +47,21 @@
 
 
 @mixin iphone-5 {
-  @include mediaquery(320, 568, null, 2) {
+  @include mediaquery-screenonly(320, 568, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5-portrait {
-  @include mediaquery(320, 568, portrait, 2) {
+  @include mediaquery-screenonly(320, 568, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5-landscape {
-  @include mediaquery(320, 568, landscape, 2) {
+  @include mediaquery-screenonly(320, 568, landscape, 2) {
     @content;
   }
 }
@@ -69,21 +69,21 @@
 
 
 @mixin iphone-5s {
-  @include mediaquery(320, 568, null, 2) {
+  @include mediaquery-screenonly(320, 568, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5s-portrait {
-  @include mediaquery(320, 568, portrait, 2) {
+  @include mediaquery-screenonly(320, 568, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5s-landscape {
-  @include mediaquery(320, 568, landscape, 2) {
+  @include mediaquery-screenonly(320, 568, landscape, 2) {
     @content;
   }
 }
@@ -91,21 +91,21 @@
 
 
 @mixin iphone-5c {
-  @include mediaquery(320, 568, null, 2) {
+  @include mediaquery-screenonly(320, 568, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5c-portrait {
-  @include mediaquery(320, 568, portrait, 2) {
+  @include mediaquery-screenonly(320, 568, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5c-landscape {
-  @include mediaquery(320, 568, landscape, 2) {
+  @include mediaquery-screenonly(320, 568, landscape, 2) {
     @content;
   }
 }
@@ -113,21 +113,21 @@
 
 
 @mixin iphone-5se {
-  @include mediaquery(320, 568, null, 2) {
+  @include mediaquery-screenonly(320, 568, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5se-portrait {
-  @include mediaquery(320, 568, portrait, 2) {
+  @include mediaquery-screenonly(320, 568, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-5se-landscape {
-  @include mediaquery(320, 568, landscape, 2) {
+  @include mediaquery-screenonly(320, 568, landscape, 2) {
     @content;
   }
 }
@@ -135,21 +135,21 @@
 
 
 @mixin iphone-6 {
-  @include mediaquery(375, 667, null, 2) {
+  @include mediaquery-screenonly(375, 667, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-6-portrait {
-  @include mediaquery(375, 667, portrait, 2) {
+  @include mediaquery-screenonly(375, 667, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-6-landscape {
-  @include mediaquery(375, 667, landscape, 2) {
+  @include mediaquery-screenonly(375, 667, landscape, 2) {
     @content;
   }
 }
@@ -157,21 +157,21 @@
 
 
 @mixin iphone-6s {
-  @include mediaquery(375, 667, null, 2) {
+  @include mediaquery-screenonly(375, 667, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-6s-portrait {
-  @include mediaquery(375, 667, portrait, 2) {
+  @include mediaquery-screenonly(375, 667, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-6s-landscape {
-  @include mediaquery(375, 667, landscape, 2) {
+  @include mediaquery-screenonly(375, 667, landscape, 2) {
     @content;
   }
 }
@@ -179,21 +179,21 @@
 
 
 @mixin iphone-6-plus {
-  @include mediaquery(414, 736, null, 3) {
+  @include mediaquery-screenonly(414, 736, null, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-6-plus-portrait {
-  @include mediaquery(414, 736, portrait, 3) {
+  @include mediaquery-screenonly(414, 736, portrait, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-6-plus-landscape {
-  @include mediaquery(414, 736, landscape, 3) {
+  @include mediaquery-screenonly(414, 736, landscape, 3) {
     @content;
   }
 }
@@ -201,21 +201,21 @@
 
 
 @mixin iphone-7 {
-  @include mediaquery(375, 667, null, 2) {
+  @include mediaquery-screenonly(375, 667, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-7-portrait {
-  @include mediaquery(375, 667, portrait, 2) {
+  @include mediaquery-screenonly(375, 667, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-7-landscape {
-  @include mediaquery(375, 667, landscape, 2) {
+  @include mediaquery-screenonly(375, 667, landscape, 2) {
     @content;
   }
 }
@@ -223,21 +223,21 @@
 
 
 @mixin iphone-7-plus {
-  @include mediaquery(414, 736, null, 3) {
+  @include mediaquery-screenonly(414, 736, null, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-7-plus-portrait {
-  @include mediaquery(414, 736, portrait, 3) {
+  @include mediaquery-screenonly(414, 736, portrait, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-7-plus-landscape {
-  @include mediaquery(414, 736, landscape, 3) {
+  @include mediaquery-screenonly(414, 736, landscape, 3) {
     @content;
   }
 }
@@ -245,21 +245,21 @@
 
 
 @mixin iphone-8 {
-  @include mediaquery(375, 667, null, 2) {
+  @include mediaquery-screenonly(375, 667, null, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-8-portrait {
-  @include mediaquery(375, 667, portrait, 2) {
+  @include mediaquery-screenonly(375, 667, portrait, 2) {
     @content;
   }
 }
 
 
 @mixin iphone-8-landscape {
-  @include mediaquery(375, 667, landscape, 2) {
+  @include mediaquery-screenonly(375, 667, landscape, 2) {
     @content;
   }
 }
@@ -267,21 +267,21 @@
 
 
 @mixin iphone-8-plus {
-  @include mediaquery(414, 736, null, 3) {
+  @include mediaquery-screenonly(414, 736, null, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-8-plus-portrait {
-  @include mediaquery(414, 736, portrait, 3) {
+  @include mediaquery-screenonly(414, 736, portrait, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-8-plus-landscape {
-  @include mediaquery(414, 736, landscape, 3) {
+  @include mediaquery-screenonly(414, 736, landscape, 3) {
     @content;
   }
 }
@@ -289,21 +289,21 @@
 
 
 @mixin iphone-x {
-  @include mediaquery(375, 812, null, 3) {
+  @include mediaquery-screenonly(375, 812, null, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-x-portrait {
-  @include mediaquery(375, 812, portrait, 3) {
+  @include mediaquery-screenonly(375, 812, portrait, 3) {
     @content;
   }
 }
 
 
 @mixin iphone-x-landscape {
-  @include mediaquery(375, 812, landscape, 3) {
+  @include mediaquery-screenonly(375, 812, landscape, 3) {
     @content;
   }
 }

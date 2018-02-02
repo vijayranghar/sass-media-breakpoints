@@ -3,21 +3,21 @@
 
 
 @mixin google-pixel {
-  @include mediaquery(360, 640, null, 3) {
+  @include mediaquery-screenonly(360, 640, null, 3) {
     @content;
   }
 }
 
 
 @mixin google-pixel-portrait {
-  @include mediaquery(360, 640, portrait, 3) {
+  @include mediaquery-screenonly(360, 640, portrait, 3) {
     @content;
   }
 }
 
 
 @mixin google-pixel-landscape {
-  @include mediaquery(360, 640, landscape, 3) {
+  @include mediaquery-screenonly(360, 640, landscape, 3) {
     @content;
   }
 }
@@ -25,21 +25,21 @@
 
 
 @mixin google-pixel-xl {
-  @include mediaquery(360, 640, null, 4) {
+  @include mediaquery-screenonly(360, 640, null, 4) {
     @content;
   }
 }
 
 
 @mixin google-pixel-xl-portrait {
-  @include mediaquery(360, 640, portrait, 4) {
+  @include mediaquery-screenonly(360, 640, portrait, 4) {
     @content;
   }
 }
 
 
 @mixin google-pixel-xl-landscape {
-  @include mediaquery(360, 640, landscape, 4) {
+  @include mediaquery-screenonly(360, 640, landscape, 4) {
     @content;
   }
 }
