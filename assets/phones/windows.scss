@@ -1,0 +1,23 @@
+@import '../helper';
+
+/* ------------------ Windows ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin windows {
+  @include mediaquery(480, 800, null) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin windows-portrait {
+  @include mediaquery(480, 800, portrait) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin windows-landscape {
+  @include mediaquery(480, 800, landscape) {
+    @content;
+  }
+}

@@ -1,0 +1,9 @@
+/* ------------------ Moto 360 watch  ------------------ */
+
+@mixin moto-360 {
+  @media 
+    (max-device-width: 218px)
+    and (max-device-height: 281px) { 
+      @content;
+  }
+}

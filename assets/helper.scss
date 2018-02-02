@@ -1,0 +1,38 @@
+@mixin mediaquery (
+  $minWidth, 
+  $maxWidth,
+  $orientation: null,
+  $ratio: null
+) {
+  @if $minWidth and $maxWidth and $ratio and $orientation {
+    @media only screen 
+      and (min-device-width: $minWidth+'px') 
+      and (max-device-width: $maxWidth+'px')
+      and (-webkit-min-device-pixel-ratio: $ratio)
+      and (-moz-device-pixel-ratio: $ratio)
+      and (orientation: $orientation) {
+        @content;
+    }
+  } @else if $minWidth and $maxWidth and $orientation {
+    @media only screen 
+      and (min-device-width: $minWidth+'px') 
+      and (max-device-width: $maxWidth+'px')
+      and (orientation: $orientation) {
+        @content;
+    }
+  } @else if $minWidth and $maxWidth and $ratio {
+    @media only screen 
+      and (min-device-width: $minWidth+'px') 
+      and (max-device-width: $maxWidth+'px')
+      and (-webkit-min-device-pixel-ratio: $ratio)
+      and (-moz-device-pixel-ratio: $ratio) {
+        @content;
+    }
+  } @else if $minWidth and $maxWidth {
+    @media only screen 
+      and (min-device-width: $minWidth+'px') 
+      and (max-device-width: $maxWidth+'px') {
+        @content;
+    }
+  }
+}            

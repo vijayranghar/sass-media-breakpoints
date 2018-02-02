@@ -1,7 +1,7 @@
 @import './assets/index';
 
 body {
-  @include iphone-4-portrait {
+  @include mediaquery(300, 500) {
     background-color: orange;
   }
 }

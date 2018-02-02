@@ -1,0 +1,111 @@
+@import '../helper';
+
+/* ------------------ Galaxy S3 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-s3 {
+  @include mediaquery(320, 640, null, 2) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-s3-portrait {
+  @include mediaquery(320, 640, portrait, 2) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-s3-landscape {
+  @include mediaquery(320, 640, landscape, 2) {
+    @content;
+  }
+}
+
+/* ------------------ Galaxy S4 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-s4 {
+  @include mediaquery(320, 640, null, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-s4-portrait {
+  @include mediaquery(320, 640, portrait, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-s4-landscape {
+  @include mediaquery(320, 640, landscape, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Galaxy S5 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-s5 {
+  @include mediaquery(320, 640, null, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-s5-portrait {
+  @include mediaquery(320, 640, portrait, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-s5-landscape {
+  @include mediaquery(320, 640, landscape, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Galaxy Note 3 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-note3 {
+  @include mediaquery(320, 640, null, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-note3-portrait {
+  @include mediaquery(320, 640, portrait, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-note3-landscape {
+  @include mediaquery(320, 640, landscape, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Galaxy S6 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-s6 {
+  @include mediaquery(360, 640, null, 4) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-s6-portrait {
+  @include mediaquery(360, 640, portrait, 4) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-s6-landscape {
+  @include mediaquery(360, 640, landscape, 4) {
+    @content;
+  }
+}

@@ -1,0 +1,8 @@
+/* ------------------ Apple Watch  ------------------ */
+
+@mixin apple-watch {
+  @media (max-device-width: 42mm)
+    and (min-device-width: 38mm) { 
+      @content;
+  }
+}

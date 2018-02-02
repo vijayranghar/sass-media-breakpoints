@@ -1,0 +1,45 @@
+@import '../helper';
+
+/* ------------------ Google Pixel ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin google-pixel {
+  @include mediaquery(360, 640, null, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin google-pixel-portrait {
+  @include mediaquery(360, 640, portrait, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin google-pixel-landscape {
+  @include mediaquery(360, 640, landscape, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Google Pixel XL ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin google-pixel-xl {
+  @include mediaquery(360, 640, null, 4) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin google-pixel-xl-portrait {
+  @include mediaquery(360, 640, portrait, 4) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin google-pixel-xl-landscape {
+  @include mediaquery(360, 640, landscape, 4) {
+    @content;
+  }
+}

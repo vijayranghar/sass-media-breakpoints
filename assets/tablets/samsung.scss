@@ -1,0 +1,54 @@
+/* ------------------ samsung Galaxy Tab 2 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-tab-2 {
+  @media (min-device-width: 800px) 
+    and (max-device-width: 1280px) {
+      @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-tab-2-portrait {
+  @media (max-device-width: 800px) 
+    and (orientation: portrait) { 
+      @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-tab-2-landscape {
+  @media (max-device-width: 1280px) 
+    and (orientation: landscape) { 
+      @content;
+  }
+}
+
+/* ------------------ samsung Galaxy Tab S ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin galaxy-tab-s {
+  @media (min-device-width: 800px) 
+    and (max-device-width: 1280px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+      @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin galaxy-tab-s-portrait {
+  @media (max-device-width: 800px) 
+    and (orientation: portrait) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (-moz-device-pixel-ratio: 2)  { 
+      @content;
+    }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin galaxy-tab-s-landscape {
+  @media (max-device-width: 1280px) 
+    and (orientation: landscape) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (-moz-device-pixel-ratio: 2)  { 
+      @content;
+  }
+}

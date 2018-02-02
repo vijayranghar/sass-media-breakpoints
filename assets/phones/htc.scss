@@ -1,0 +1,23 @@
+@import '../helper';
+
+/* ------------------ HTC One ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin htc-one {
+  @include mediaquery(360, 640, null, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin htc-one-portrait {
+  @include mediaquery(360, 640, portrait, 3) {
+    @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin htc-one-landscape {
+  @include mediaquery(360, 640, landscape, 3) {
+    @content;
+  }
+}

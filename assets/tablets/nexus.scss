@@ -1,0 +1,71 @@
+/* ------------------ Nexus 7 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin nexus-7 {
+  @media screen 
+    and (device-width: 601px) 
+    and (device-height: 906px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) {
+      @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin nexus-7-portrait {
+  @media screen 
+    and (device-width: 601px) 
+    and (device-height: 906px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) 
+    and (orientation: portrait) {
+      @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin nexus-7-landscape {
+  @media screen 
+    and (device-width: 601px) 
+    and (device-height: 906px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) 
+    and (orientation: landscape) {
+      @content;
+  }
+}
+
+/* ------------------ Nexus 9 ------------------ */
+/* ------------------ Portrait and Landscape ------------------ */
+@mixin nexus-9 {
+  @media screen 
+    and (device-width: 1536px) 
+    and (device-height: 2048px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) {
+      @content;
+  }
+}
+
+/* ------------------ Portrait ------------------ */
+@mixin nexus-9-portrait {
+  @media screen 
+    and (device-width: 1536px) 
+    and (device-height: 2048px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) 
+    and (orientation: portrait) {
+      @content;
+  }
+}
+
+/* ------------------ Landscape ------------------ */
+@mixin nexus-9-landscape {
+  @media screen 
+    and (device-width: 1536px) 
+    and (device-height: 2048px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) 
+    and (orientation: landscape) {
+      @content;
+  }
+}
