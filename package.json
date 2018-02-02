@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass ./assets/index.scss > ./index.css && node-sass ./style.scss > ./style.css"
+    "compile": "node-sass ./index.scss > ./index.css"
   },
   "repository": {
     "type": "git",
