@@ -131,12 +131,12 @@ If you want to contribute and add more commonly used mixing, do the following
       }
     ```
     
- - #### mediaquery-screenonly
+ - #### mq-screen
  	This mixin is exactly the same as `mediaquery` but adds `only screen` to all the media queries 
     
     so, for example 
  	```
-    @include mediaquery-screenonly (200, 500) {}
+    @include mq-screen (200, 500) {}
     ```
     ```
     @media only screen

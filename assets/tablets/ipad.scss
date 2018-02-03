@@ -1,199 +1,111 @@
 @import '../helper';
 
+@mixin ipad-1($orientation: null) {
+  @if $orientation {
+    @include mq-screen(768, 1024, $orientation, 1) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 1) {
+      @content;
+    }
+  }
+}
 
+@mixin ipad-2($orientation: null) {
+  @if $orientation {
+    @include mq-screen(768, 1024, $orientation, 1) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 1) {
+      @content;
+    }
+  }
+}
 
-@mixin ipad-1 {
-  @include mediaquery-screenonly(768, 1024, null, 1) {
-    @content;
+@mixin ipad-mini($orientation: null) {
+  @if $orientation {
+      @content;
+      @include mq-screen(768, 1024, $orientation, 1) {
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 1) {
+      @content;
+    }
+  }
+}
+
+@mixin ipad-air($orientation: null) {
+  @if $orientation {
+    @include mq-screen(768, 1024, $orientation, 1) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 1) {
+      @content;
+    }
   }
 }
 
 
-@mixin ipad-1-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 1) {
-    @content;
+@mixin ipad-3($orientation: null) {
+  @if $orientation {
+    @include mq-screen(768, 1024, $orientation, 2) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 2) {
+      @content;
+    }
+  }
+}
+
+@mixin ipad-4($orientation: null) {
+  @if $orientation {
+    @include mq-screen(768, 1024, $orientation, 2) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 2) {
+      @content;
+    }
   }
 }
 
 
-@mixin ipad-1-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 1) {
-    @content;
+@mixin ipad-pro-97($orientation: null) {
+  @if $orientation {
+    @include mq-screen(768, 1024, $orientation, 2) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(768, 1024, null, 2) {
+      @content;
+    }
   }
 }
 
-
-
-@mixin ipad-2 {
-  @include mediaquery-screenonly(768, 1024, null, 1) {
-    @content;
+@mixin ipad-pro-105($orientation: null) {
+  @if $orientation {
+    @include mq-screen(834, 834, $orientation, 2) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(834, 1112, null, 2) {
+      @content;
+    }
   }
 }
 
-
-@mixin ipad-2-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 1) {
-    @content;
-  }
-}
-
-
-@mixin ipad-2-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 1) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-mini {
-  @include mediaquery-screenonly(768, 1024, null, 1) {
-    @content;
-  }
-}
-
-
-@mixin ipad-mini-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 1) {
-    @content;
-  }
-}
-
-
-@mixin ipad-mini-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 1) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-air {
-  @include mediaquery-screenonly(768, 1024, null, 1) {
-    @content;
-  }
-}
-
-
-@mixin ipad-air-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 1) {
-    @content;
-  }
-}
-
-
-@mixin ipad-air-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 1) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-3 {
-  @include mediaquery-screenonly(768, 1024, null, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-3-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-3-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 2) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-4 {
-  @include mediaquery-screenonly(768, 1024, null, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-4-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-4-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 2) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-pro-97 {
-  @include mediaquery-screenonly(768, 1024, null, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-pro-97-portrait {
-  @include mediaquery-screenonly(768, 1024, portrait, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-pro-97-landscape {
-  @include mediaquery-screenonly(768, 1024, landscape, 2) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-pro-105 {
-  @include mediaquery-screenonly(834, 1112, null, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-pro-105-portrait {
-  @include mediaquery-screenonly(834, 834, portrait, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-pro-105-landscape {
-  @include mediaquery-screenonly(1112, 1112, landscape, 2) {
-    @content;
-  }
-}
-
-
-
-@mixin ipad-pro-129 {
-  @include mediaquery-screenonly(1024, 1366, null, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-pro-129-portrait {
-  @include mediaquery-screenonly(1024, 1024, portrait, 2) {
-    @content;
-  }
-}
-
-
-@mixin ipad-pro-129-landscape {
-  @include mediaquery-screenonly(1366, 1366, landscape, 2) {
-    @content;
+@mixin ipad-pro-129($orientation: null) {
+  @if $orientation {
+    @include mq-screen(1024, 1024, $orientation, 2) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(1024, 1366, null, 2) {
+      @content;
+    }
   }
 }

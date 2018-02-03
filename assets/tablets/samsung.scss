@@ -1,54 +1,30 @@
-
-
-@mixin galaxy-tab-2 {
-  @media (min-device-width: 800px) 
+@mixin galaxy-tab-2($orientation: null) {
+  @if $orientation {
+    @media (max-device-width: 800px) 
+    and (orientation: $orientation) { 
+      @content;
+    }
+  } @else {
+    @media (min-device-width: 800px) 
     and (max-device-width: 1280px) {
       @content;
+    }
   }
 }
 
-
-@mixin galaxy-tab-2-portrait {
-  @media (max-device-width: 800px) 
-    and (orientation: portrait) { 
-      @content;
-  }
-}
-
-
-@mixin galaxy-tab-2-landscape {
-  @media (max-device-width: 1280px) 
-    and (orientation: landscape) { 
-      @content;
-  }
-}
-
-
-
-@mixin galaxy-tab-s {
-  @media (min-device-width: 800px) 
-    and (max-device-width: 1280px)
-    and (-webkit-min-device-pixel-ratio: 2) {
-      @content;
-  }
-}
-
-
-@mixin galaxy-tab-s-portrait {
-  @media (max-device-width: 800px) 
-    and (orientation: portrait) 
+@mixin galaxy-tab-s($orientation: null) {
+  @if $orientation {
+    @media (max-device-width: 800px) 
+    and (orientation: $orientation) 
     and (-webkit-min-device-pixel-ratio: 2)
     and (-moz-device-pixel-ratio: 2)  { 
       @content;
     }
-}
-
-
-@mixin galaxy-tab-s-landscape {
-  @media (max-device-width: 1280px) 
-    and (orientation: landscape) 
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (-moz-device-pixel-ratio: 2)  { 
+  } @else {
+    @media (min-device-width: 800px) 
+    and (max-device-width: 1280px)
+    and (-webkit-min-device-pixel-ratio: 2) {
       @content;
+    }
   }
 }

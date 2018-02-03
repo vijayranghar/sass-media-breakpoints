@@ -1,23 +1,14 @@
 @import '../helper';
 
-
-
-@mixin htc-one {
-  @include mediaquery-screenonly(360, 640, null, 3) {
-    @content;
+@mixin htc-one($orientation: null) {
+  @if $orientation {
+    @include mq-screen(360, 640, $orientation, 3) {
+      @content;
+    }    
   }
-}
-
-
-@mixin htc-one-portrait {
-  @include mediaquery-screenonly(360, 640, portrait, 3) {
-    @content;
-  }
-}
-
-
-@mixin htc-one-landscape {
-  @include mediaquery-screenonly(360, 640, landscape, 3) {
-    @content;
-  }
+  @else {
+    @include mq-screen(360, 640, null, 3) {
+      @content;
+    }
+  }  
 }

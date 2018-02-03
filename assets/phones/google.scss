@@ -1,45 +1,25 @@
 @import '../helper';
 
-
-
-@mixin google-pixel {
-  @include mediaquery-screenonly(360, 640, null, 3) {
-    @content;
+@mixin google-pixel($orientation: null) {
+  @if $orientation {
+    @include mq-screen(360, 640, $orientation, 3) {
+      @content;
+    }  
+  } @else {
+    @include mq-screen(360, 640, null, 3) {
+      @content;
+    }  
   }
 }
 
-
-@mixin google-pixel-portrait {
-  @include mediaquery-screenonly(360, 640, portrait, 3) {
-    @content;
-  }
-}
-
-
-@mixin google-pixel-landscape {
-  @include mediaquery-screenonly(360, 640, landscape, 3) {
-    @content;
-  }
-}
-
-
-
-@mixin google-pixel-xl {
-  @include mediaquery-screenonly(360, 640, null, 4) {
-    @content;
-  }
-}
-
-
-@mixin google-pixel-xl-portrait {
-  @include mediaquery-screenonly(360, 640, portrait, 4) {
-    @content;
-  }
-}
-
-
-@mixin google-pixel-xl-landscape {
-  @include mediaquery-screenonly(360, 640, landscape, 4) {
-    @content;
+@mixin google-pixel-xl($orientation: null) {
+  @if $orientation {
+    @include mq-screen(360, 640, $orientation, 4) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(360, 640, null, 4) {
+      @content;
+    }
   }
 }

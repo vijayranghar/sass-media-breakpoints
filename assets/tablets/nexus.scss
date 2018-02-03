@@ -1,71 +1,41 @@
-
-
-@mixin nexus-7 {
-  @media screen 
+@mixin nexus-7($orientation: null) {
+  @if $orientation {
+    @media screen 
+    and (device-width: 601px) 
+    and (device-height: 906px) 
+    and (-webkit-min-device-pixel-ratio: 1.331) 
+    and (-webkit-max-device-pixel-ratio: 1.332) 
+    and (orientation: $orientation) {
+      @content;
+    }
+  } @else {
+    @media screen 
     and (device-width: 601px) 
     and (device-height: 906px) 
     and (-webkit-min-device-pixel-ratio: 1.331) 
     and (-webkit-max-device-pixel-ratio: 1.332) {
       @content;
+    }
   }
 }
 
-
-@mixin nexus-7-portrait {
-  @media screen 
-    and (device-width: 601px) 
-    and (device-height: 906px) 
+@mixin nexus-9($orientation: null) {
+  @if $orientation {
+    @media screen 
+    and (device-width: 1536px) 
+    and (device-height: 2048px) 
     and (-webkit-min-device-pixel-ratio: 1.331) 
     and (-webkit-max-device-pixel-ratio: 1.332) 
-    and (orientation: portrait) {
+    and (orientation: $orientation) {
       @content;
-  }
-}
-
-
-@mixin nexus-7-landscape {
-  @media screen 
-    and (device-width: 601px) 
-    and (device-height: 906px) 
-    and (-webkit-min-device-pixel-ratio: 1.331) 
-    and (-webkit-max-device-pixel-ratio: 1.332) 
-    and (orientation: landscape) {
-      @content;
-  }
-}
-
-
-
-@mixin nexus-9 {
-  @media screen 
+    }
+  } @else {
+    @media screen 
     and (device-width: 1536px) 
     and (device-height: 2048px) 
     and (-webkit-min-device-pixel-ratio: 1.331) 
     and (-webkit-max-device-pixel-ratio: 1.332) {
       @content;
-  }
-}
-
-
-@mixin nexus-9-portrait {
-  @media screen 
-    and (device-width: 1536px) 
-    and (device-height: 2048px) 
-    and (-webkit-min-device-pixel-ratio: 1.331) 
-    and (-webkit-max-device-pixel-ratio: 1.332) 
-    and (orientation: portrait) {
-      @content;
-  }
-}
-
-
-@mixin nexus-9-landscape {
-  @media screen 
-    and (device-width: 1536px) 
-    and (device-height: 2048px) 
-    and (-webkit-min-device-pixel-ratio: 1.331) 
-    and (-webkit-max-device-pixel-ratio: 1.332) 
-    and (orientation: landscape) {
-      @content;
+    }
   }
 }

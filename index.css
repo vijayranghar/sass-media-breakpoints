@@ -1,5 +1,11 @@
-body {
-  background-color: green; }
-  @media only screen and (min-device-width: 300px) and (max-device-width: 500px) and (orientation: portrait) {
-    body {
-      background-color: orange; } }
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (orientation: portrait) {
+  body {
+    background-color: orange; } }
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) and (orientation: landscape) {
+  body {
+    background-color: yellow; } }
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 3) and (-moz-device-pixel-ratio: 3) {
+  body {
+    background-color: black; } }

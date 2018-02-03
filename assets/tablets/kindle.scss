@@ -1,45 +1,25 @@
 @import '../helper';
 
-
-
-@mixin kindle-fire-hd-7 {
-  @include mediaquery-screenonly(800, 1280, null, 1.5) {
-    @content;
+@mixin kindle-fire-hd-7($orientation: null) {
+  @if $orientation {
+    @include mq-screen(800, 1280, $orientation, 1.5) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(800, 1280, null, 1.5) {
+      @content;
+    }
   }
 }
 
-
-@mixin kindle-fire-hd-7-portrait {
-  @include mediaquery-screenonly(800, 1280, portrait, 1.5) {
-    @content;
-  }
-}
-
-
-@mixin kindle-fire-hd-7-landscape {
-  @include mediaquery-screenonly(800, 1280, landscape, 1.5) {
-    @content;
-  }
-}
-
-
-
-@mixin kindle-fire-hd-89 {
-  @include mediaquery-screenonly(1200, 1600, null, 1.5) {
-    @content;
-  }
-}
-
-
-@mixin kindle-fire-hd-89-portrait {
-  @include mediaquery-screenonly(1200, 1600, portrait, 1.5) {
-    @content;
-  }
-}
-
-
-@mixin kindle-fire-hd-89-landscape {
-  @include mediaquery-screenonly(1200, 1600, landscape, 1.5) {
-    @content;
+@mixin kindle-fire-hd-89($orientation: null) {
+  @if $orientation {
+    @include mq-screen(1200, 1600, $orientation, 1.5) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(1200, 1600, null, 1.5) {
+      @content;
+    }
   }
 }

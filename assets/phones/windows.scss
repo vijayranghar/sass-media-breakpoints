@@ -1,23 +1,13 @@
 @import '../helper';
 
-
-
-@mixin windows {
-  @include mediaquery-screenonly(480, 800, null) {
-    @content;
-  }
-}
-
-
-@mixin windows-portrait {
-  @include mediaquery-screenonly(480, 800, portrait) {
-    @content;
-  }
-}
-
-
-@mixin windows-landscape {
-  @include mediaquery-screenonly(480, 800, landscape) {
-    @content;
+@mixin windows($orientation: null) {
+  @if $orientation {
+    @include mq-screen(480, 800, $orientation) {
+      @content;
+    }
+  } @else {
+    @include mq-screen(480, 800, null) {
+      @content;
+    }
   }
 }
