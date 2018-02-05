@@ -1,6 +1,6 @@
 {
   "name": "sass-media-breakpoints",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A lightweight set of sass mixins for media queries written to make you more productive and make your media queries more readable.",
   "main": "index.js",
   "scripts": {
