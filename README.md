@@ -150,124 +150,97 @@ If you want to contribute and add more commonly used mixing, do the following
     ###### Although we do not recommend using devide specific media queries, but there are situations when you need to use them.
     
     Following are a list of all device specific media queries
-     
- - #### google-pixel
- - #### google-pixel-portrait
- - #### google-pixel-landscape
- - #### google-pixel-xl
- - #### google-pixel-xl-portrait
- - #### google-pixel-xl-landscape
- - #### htc-one
- - #### htc-one-portrait
- - #### htc-one-landscape
- - #### iphone-4
- - #### iphone-4-portrait
- - #### iphone-4-landscape
- - #### iphone-4s
- - #### iphone-4s-portrait
- - #### iphone-4s-landscape
- - #### iphone-5
- - #### iphone-5-portrait
- - #### iphone-5-landscape
- - #### iphone-5s
- - #### iphone-5s-portrait
- - #### iphone-5s-landscape
- - #### iphone-5c
- - #### iphone-5c-portrait
- - #### iphone-5c-landscape
- - #### iphone-5se
- - #### iphone-5se-portrait
- - #### iphone-5se-landscape
- - #### iphone-6
- - #### iphone-6-portrait
- - #### iphone-6-landscape
- - #### iphone-6s
- - #### iphone-6s-portrait
- - #### iphone-6s-landscape
- - #### iphone-6-plus
- - #### iphone-6-plus-portrait
- - #### iphone-6-plus-landscape
- - #### iphone-7
- - #### iphone-7-portrait
- - #### iphone-7-landscape
- - #### iphone-7-plus
- - #### iphone-7-plus-portrait
- - #### iphone-7-plus-landscape
- - #### iphone-8
- - #### iphone-8-portrait
- - #### iphone-8-landscape
- - #### iphone-8-plus
- - #### iphone-8-plus-portrait
- - #### iphone-8-plus-landscape
- - #### iphone-x
- - #### iphone-x-portrait
- - #### iphone-x-landscape
- - #### galaxy-s3
- - #### galaxy-s3-portrait
- - #### galaxy-s3-landscape
- - #### galaxy-s4
- - #### galaxy-s4-portrait
- - #### galaxy-s4-landscape
- - #### galaxy-s5
- - #### galaxy-s5-portrait
- - #### galaxy-s5-landscape
- - #### galaxy-note3
- - #### galaxy-note3-portrait
- - #### galaxy-note3-landscape
- - #### galaxy-s6
- - #### galaxy-s6-portrait
- - #### galaxy-s6-landscape
- - #### windows
- - #### windows-portrait
- - #### windows-landscape
- - #### ipad-1
- - #### ipad-1-portrait
- - #### ipad-2-landscape
- - #### ipad-2
- - #### ipad-2-portrait
- - #### ipad-2-landscape
- - #### ipad-mini
- - #### ipad-mini-portrait
- - #### ipad-mini-landscape
- - #### ipad-air
- - #### ipad-air-portrait
- - #### ipad-air-landscape
- - #### ipad-3
- - #### ipad-3-portrait
- - #### ipad-3-landscape
- - #### ipad-4
- - #### ipad-4-portrait
- - #### ipad-4-landscape
- - #### ipad-pro-97
- - #### ipad-pro-97-portrait
- - #### ipad-pro-97-landscape
- - #### ipad-pro-105
- - #### ipad-pro-105-portrait
- - #### ipad-pro-105-landscape
- - #### ipad-pro-129
- - #### ipad-pro-129-portrait
- - #### ipad-pro-129-landscape
- - #### kindle-fire-hd-7
- - #### kindle-fire-hd-7-portrait
- - #### kindle-fire-hd-7-landscape
- - #### kindle-fire-hd-89
- - #### kindle-fire-hd-89-portrait
- - #### kindle-fire-hd-89-landscape
- - #### nexus-7
- - #### nexus-7-portrait
- - #### nexus-7-landscape
- - #### nexus-9
- - #### nexus-9-portrait
- - #### nexus-9-landscape
- - #### samsung-tab-2
- - #### samsung-tab-2-portrait
- - #### samsung-tab-2-landscape
- - #### samsung-tab-s
- - #### samsung-tab-s-portrait
- - #### samsung-tab-s-landscape
- - #### apple-watch
- - #### moto-360
- - #### laptop-non-retina
- - #### laptop-retina
+    
+    Each mixin can be either used without any param or with a single param to set the orientation which can be either landscape or portrait
+    
+    example Use 
+    
+    ```@inclue iphone-5 {}```
+    
+    ```@inclue iphone-5(landscape) {}```
+    
+    ```@inclue iphone-5(portrait) {}```
+    
+  - #### google-pixel
+  - #### google-pixel(landscape | portrait)
+  - #### google-pixel-xl
+  - #### google-pixel-xl-(landscape | portrait)
+  - #### htc-one
+  - #### htc-one(landscape | portrait)
+  - #### iphone-4
+  - #### iphone-4(landscape | portrait)
+  - #### iphone-4s
+  - #### iphone-4s(landscape | portrait)
+  - #### iphone-5
+  - #### iphone-5(landscape | portrait)
+  - #### iphone-5s
+  - #### iphone-5s(landscape | portrait)
+  - #### iphone-5c
+  - #### iphone-5c(landscape | portrait)
+  - #### iphone-5se
+  - #### iphone-5se(landscape | portrait)
+  - #### iphone-6
+  - #### iphone-6(landscape | portrait)
+  - #### iphone-6s
+  - #### iphone-6s(landscape | portrait)
+  - #### iphone-6-plus
+  - #### iphone-6-plus(landscape | portrait)
+  - #### iphone-7
+  - #### iphone-7(landscape | portrait)
+  - #### iphone-7-plus
+  - #### iphone-7-plus(landscape | portrait)
+  - #### iphone-8
+  - #### iphone-8(landscape | portrait)
+  - #### iphone-8-plus
+  - #### iphone-8-plus(landscape | portrait)
+  - #### iphone-x
+  - #### iphone-x(landscape | portrait)
+  - #### galaxy-s3
+  - #### galaxy-s3(landscape | portrait)
+  - #### galaxy-s4
+  - #### galaxy-s4(landscape | portrait)
+  - #### galaxy-s5
+  - #### galaxy-s5(landscape | portrait)
+  - #### galaxy-note3
+  - #### galaxy-note3(landscape | portrait)
+  - #### galaxy-s6
+  - #### galaxy-s6(landscape | portrait)
+  - #### windows
+  - #### windows(landscape | portrait)
+  - #### ipad-1
+  - #### ipad-1(landscape | portrait)
+  - #### ipad-2
+  - #### ipad-2(landscape | portrait)
+  - #### ipad-mini
+  - #### ipad-mini(landscape | portrait)
+  - #### ipad-air
+  - #### ipad-air(landscape | portrait)
+  - #### ipad-3
+  - #### ipad-3(landscape | portrait)
+  - #### ipad-4
+  - #### ipad-4(landscape | portrait)
+  - #### ipad-pro-97
+  - #### ipad-pro-97(landscape | portrait)
+  - #### ipad-pro-105
+  - #### ipad-pro-105(landscape | portrait)
+  - #### ipad-pro-129
+  - #### ipad-pro-129(landscape | portrait)
+  - #### kindle-fire-hd-7
+  - #### kindle-fire-hd-7(landscape | portrait)
+  - #### kindle-fire-hd-89
+  - #### kindle-fire-hd-89(landscape | portrait)
+  - #### nexus-7
+  - #### nexus-7(landscape | portrait)
+  - #### nexus-9
+  - #### nexus-9(landscape | portrait)
+  - #### samsung-tab-2
+  - #### samsung-tab-2(landscape | portrait)
+  - #### samsung-tab-s
+  - #### samsung-tab-s(landscape | portrait)
+  - #### apple-watch
+  - #### moto-360
+  - #### laptop-non-retina
+  - #### laptop-retina
 
 - [Chris Coyier](https://css-tricks.com/author/chriscoyier/) has documented breakpoints for all these devices really well [here](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+     
