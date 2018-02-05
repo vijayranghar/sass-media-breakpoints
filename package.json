@@ -1,17 +1,30 @@
 {
   "name": "sass-media-breakpoints",
   "version": "0.0.1",
-  "description": "",
+  "description": "A lightweight set of sass mixins for media queries written to make you more productive and make your media queries more readable.",
   "main": "index.js",
   "scripts": {
     "compile": "node-sass ./index.scss > ./index.css"
   },
   "repository": {
     "type": "git",
-    "url": "git@github-nerd:vijayranghar/sass-media-breakpoints.git"
+    "url": "https://github.com/vijayranghar/sass-media-breakpoints.git"
   },
-  "author": "Yatin Gera <yatin.gera5@gmail.com>",
-  "license": "ISC",
+  "author": {
+    "name": "Vijay Ranghar",
+    "email": "vijayranghar@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/vijayranghar/sass-media-breakpoints/issues"
+  },
+  "keywords": [
+    "sass",
+    "media-query",
+    "mediaquery",
+    "sass utils",
+    "breakpoints"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.7.2"
   }

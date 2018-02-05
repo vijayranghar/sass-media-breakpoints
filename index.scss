@@ -1,13 +1,13 @@
 @import './assets/index';
 
 body {
-  @include google-pixel(portrait) {
+  @include iphone-8-plus(portrait) {
     background-color: orange;
   }
-  @include google-pixel(landscape) {
+  @include iphone-8-plus(landscape) {
     background-color: yellow;
   }
-  @include google-pixel {
+  @include iphone-8-plus {
     background-color: black;
   }
 }
