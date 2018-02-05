@@ -21,7 +21,7 @@ If you want to contribute and add more commonly used mixing, do the following
 
 - Import sass-media-breakpoints at the beginning of your stylesheet
 
-  `@import "sass-media-breakpoints/assets/index";`
+  `@import "./node_modules/sass-media-breakpoints/assets/index";`
 
 - The module contains a list of easy to use mixins that can be used by incluing them using the `@include` command.
 
